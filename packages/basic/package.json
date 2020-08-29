@@ -1,7 +1,7 @@
 {
   "name": "@ostapoff/cra-template-basic",
   "description": "Ostapoff Basic Template for Create React App",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "template.json",
   "private": false,
   "repository": {
@@ -20,5 +20,6 @@
     "create-react-app",
     "template",
     "typescript"
-  ]
+  ],
+  "gitHead": "46cce722275d029b5ed8c61eb775957ed6762dd6"
 }
