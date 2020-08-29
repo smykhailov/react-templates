@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "test": "lerna run test --stream",
-    "publish:all": "lerna publish --access public",
+    "publish:all": "lerna publish",
     "format": "prettier --check ./packages/**/*.{ts,tsx}",
     "format:fix": "prettier ./packages/** --write",
     "lint": "eslint ./packages/**/*.{ts,tsx} --max-warnings=0",
