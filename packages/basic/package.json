@@ -1,7 +1,7 @@
 {
   "name": "@ostapoff/cra-template-basic",
   "description": "Ostapoff Basic Template for Create React App",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "template.json",
   "private": false,
   "repository": {
