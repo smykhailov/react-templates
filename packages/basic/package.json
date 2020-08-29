@@ -3,6 +3,7 @@
   "description": "Ostapoff Basic Template for Create React App",
   "version": "1.0.0",
   "main": "template.json",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/smykhailov/react-templates.git"
