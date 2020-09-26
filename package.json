@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "test": "lerna run test --stream",
+    "publish:ci": "lerna publish from-package -y --no-verify-access",
     "publish:all": "lerna publish",
     "format": "prettier --check ./packages/**/*.{ts,tsx}",
     "format:fix": "prettier ./packages/** --write",
@@ -13,10 +14,11 @@
     "lint:fix": "eslint ./packages/**/*.{ts,tsx} --fix --max-warnings=0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.10.3",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.1",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.1"
   }
 }
