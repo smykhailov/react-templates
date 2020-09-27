@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "test": "lerna run test --stream",
-    "publish:ci": "lerna version patch --yes --conventional-commits --no-push --no-git-tag-version --message 'chore: release new versions' --registry=https://registry.npmjs.org/:_authToken=$NPM_TOKEN",
+    "publish:ci": "lerna version patch --yes --conventional-commits --no-push --no-git-tag-version",
     "publish": "lerna publish from-package -y --no-verify-access",
     "publish:all": "lerna publish",
     "format": "prettier --check ./packages/**/*.{ts,tsx}",
