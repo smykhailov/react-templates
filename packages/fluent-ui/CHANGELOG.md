@@ -1,6 +1,6 @@
-# @ostapoff/cra-template-fluent-ui
+# Change Log
 
-## 0.0.3
-### Patch Changes
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-- 7801b66: Adding changest
+## [0.0.4](https://github.com/smykhailov/react-templates/compare/@ostapoff/cra-template-fluent-ui@0.0.2...@ostapoff/cra-template-fluent-ui@0.0.4) (2020-09-27)
