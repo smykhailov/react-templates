@@ -1,7 +1,7 @@
 {
   "name": "@ostapoff/cra-template-fluent-ui",
   "description": "Ostapoff Fluent UI Template for Create React App",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "template.json",
   "private": false,
   "repository": {

@@ -4,9 +4,20 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
+    "create": {
+      "homepage": "https://github.com/smykhailov/@ostapoff",
+      "license": "MIT"
+    },
     "publish": {
       "conventionalCommits": true,
       "yes": true
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "exact": true,
+      "gitRemote": "upstream",
+      "message": "chore(release): %s"
     }
   }
 }
