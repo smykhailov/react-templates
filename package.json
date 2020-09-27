@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "test": "lerna run test --stream",
-    "publish:ci": "lerna publish from-package -y --no-verify-access",
+    "publish:ci": "lerna publish --yes --message 'chore: release new versions'",
+    "publish": "lerna publish from-package -y --no-verify-access",
     "publish:all": "lerna publish",
     "format": "prettier --check ./packages/**/*.{ts,tsx}",
     "format:fix": "prettier ./packages/** --write",
