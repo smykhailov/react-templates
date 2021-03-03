@@ -21,9 +21,6 @@ jobs:
       - name: Install Dependencies
         run: yarn
 
-      - name: Builds
-        run: yarn build
-
       - name: Test
         run: yarn test
 
@@ -49,7 +46,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish-npm:
-    needs: build
+    name: Publish NPM
+    needs: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -82,7 +80,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-gpr:
-    needs: build
+    name: Publish GPR
+    needs: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
