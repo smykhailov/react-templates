@@ -1,6 +1,6 @@
 # Basic Ostapoff template
 
-The Basic template creates skeleton for the React application with Typescript support.
+The Basic template creates skeleton for the React application with TypeScript support.
 
 It adds useful tools to write more robust and maintainable code:
 

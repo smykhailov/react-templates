@@ -1,6 +1,6 @@
 # Fluent UI Ostapoff template
 
-The Fluent UI template creates skeleton for the React application with Typescript support and [Fluent UI](https://aka.ms/fluent-ui) component library.
+The Fluent UI template creates skeleton for the React application with TypeScript support and [Fluent UI](https://aka.ms/fluent-ui) component library.
 
 It adds useful tools to write more robust and maintainable code:
 
