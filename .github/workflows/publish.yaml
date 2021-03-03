@@ -10,15 +10,26 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout Repo
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn
-      - run: yarn test
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Builds
+        run: yarn build
+
+      - name: Test
+        run: yarn test
 
   release:
     name: Release
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -80,7 +91,15 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: "@ostapoff"
-      - run: yarn
-      - run: yarn publish:ci
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Get latest master
+        run: |
+          git checkout master
+
+      - name: Publish package
+        run: yarn publish:ci
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
