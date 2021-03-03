@@ -59,6 +59,10 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Get latest master
+        run: |
+          git checkout master
+
       - name: Publish package
         run: yarn publish:ci
         env:
