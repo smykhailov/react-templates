@@ -9,15 +9,8 @@
       "license": "MIT"
     },
     "publish": {
-      "conventionalCommits": true,
+      "conventionalCommits": false,
       "yes": true
-    },
-    "version": {
-      "allowBranch": "master",
-      "conventionalCommits": true,
-      "exact": true,
-      "gitRemote": "upstream",
-      "message": "chore(release): %s"
     }
   }
 }
